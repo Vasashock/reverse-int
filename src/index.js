@@ -1,7 +1,7 @@
 module.exports = function reverse(n) {
   const nS = n.toString();
   let result = '';
-  for (let i = nS.length - 1; i >= 0; i--) {
+  for (let i = nS.length - 1; i >= 0; i -= 1) {
     result += nS[i];
   }
   return Number(result.replace('-', ''));
